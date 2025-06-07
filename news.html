@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>最新消息 | 甜心餅語</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="品牌 logo">
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <nav class="navbar" id="navbarMenu">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="products.html">產品介紹</a>
+        <a href="news.html">最新消息</a>
+        <a href="order.html">訂購方式</a>
+        <a href="form.html">我要下單</a>
+      </nav>
+    </div>
+  </header>
+
+<section class="hero" style="background-image: url('hero_news.png');">
+  <div class="hero-content">
+    <h1 class="hero-title">甜心消息報</h1>
+    <p class="text-white mt-2">了解最新活動、新品與重要公告</p>
+  </div>
+</section>
+
+<section class="news-section container">
+  <div class="row g-4">
+
+    <!-- 消息 1 -->
+    <div class="col-md-4">
+      <div class="card news-card">
+        <img src="news_newcookie.png" class="card-img-top news-img" alt="新品餅乾上市">
+        <div class="card-body">
+          <h5 class="card-title">新品上市：焦糖脆片餅乾</h5>
+          <p class="card-text text-muted">2025/06/01</p>
+          <span class="badge badge-custom text-light mb-2">新品</span>
+          <p class="card-text">使用自製焦糖脆片，酥脆甜香，搶先嘗鮮中！</p>
+          <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal1">查看更多</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 消息 2 -->
+    <div class="col-md-4">
+      <div class="card news-card">
+        <img src="news_summer.png" class="card-img-top news-img" alt="夏季禮盒預購">
+        <div class="card-body">
+          <h5 class="card-title">夏季禮盒預購開跑！</h5>
+          <p class="card-text text-muted">2025/05/25</p>
+          <span class="badge bg-warning text-dark mb-2">活動</span>
+          <p class="card-text">限量 200 組，早鳥享 88 折，內含 6 款人氣餅乾。</p>
+          <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal2">查看更多</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 消息 3 -->
+    <div class="col-md-4">
+      <div class="card news-card">
+        <img src="news_update.png" class="card-img-top news-img" alt="配送公告">
+        <div class="card-body">
+          <h5 class="card-title">配送服務異動公告</h5>
+          <p class="card-text text-muted">2025/05/15</p>
+          <span class="badge bg-secondary mb-2">公告</span>
+          <p class="card-text">端午連假期間，出貨與客服時間將略有調整。</p>
+          <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal3">查看更多</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">焦糖脆片餅乾上市！</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        我們全新推出「焦糖脆片餅乾」，使用手工熬煮焦糖與杏仁片製作，香脆中帶甜，回味無窮！凡 6 月內購買任兩包，即贈品牌貼紙一份喔！
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">夏季禮盒預購開跑</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        清涼一夏，就選甜心餅語！我們特製的夏季禮盒內含 6 種人氣口味，包裝設計清新可愛，是送禮與自享的絕佳選擇。限量 200 組，售完為止。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">配送異動公告</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        因應端午連假（6/8～6/10），我們的客服與物流配送將順延至 6/11（二）起陸續出貨。建議提前下單，避免等候。
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>關於我們</h3>
+      <p>我們專注於手工餅乾，提供最天然<br>、最美味的甜點體驗。</p>
+    </div>
+    <div class="footer-links">
+      <h3>快速連結</h3>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="products.html">產品介紹</a></li>
+        <li><a href="order.html">訂購方式</a></li>
+        <li><a href="form.html">我要下單</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>聯絡我們</h3>
+      <p>📞 02-1234-5678</p>
+      <p>📧 sweet_cookie@gmail.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 甜心餅語 | 保留所有權利</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navbarMenu = document.getElementById('navbarMenu');
+  
+    if (!menuToggle || !navbarMenu) return;
+  
+    menuToggle.addEventListener('click', () => {
+      navbarMenu.classList.toggle('active');
+    });
+  
+    navbarMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navbarMenu.classList.remove('active');
+      });
+    });
+  });
+</script>
+</body>
+</html>

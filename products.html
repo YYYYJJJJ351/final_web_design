@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>產品介紹 | 甜心餅語</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="品牌 logo">
+        </a>
+      </div>
+      <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      <nav class="navbar" id="navbarMenu">
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我們</a>
+        <a href="products.html">產品介紹</a>
+        <a href="news.html">最新消息</a>
+        <a href="order.html">訂購方式</a>
+        <a href="form.html">我要下單</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero" style="background-image: url('hero_products.webp');">
+    <div class="hero-content">
+      <h1 class="hero-title">我們的產品</h1>
+    </div>
+  </section>
+
+  <section class="container product-tab-pane">
+    <ul class="nav nav-tabs justify-content-center mb-4" id="productTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="cookie-tab" data-bs-toggle="tab" data-bs-target="#cookie" type="button">手工餅乾</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="cake-tab" data-bs-toggle="tab" data-bs-target="#cake" type="button">小蛋糕</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="seasonal-tab" data-bs-toggle="tab" data-bs-target="#seasonal" type="button">季節限定</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="productTabsContent">
+      <!-- 餅乾類 -->
+      <div class="tab-pane fade show active" id="cookie" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="product-card card">
+              <img src="巧克力餅乾.jpg" class="card-img-top product-img" alt="巧克力餅乾">
+              <div class="card-body text-center">
+                <h5 class="card-title">巧克力餅乾</h5>
+                <p class="card-text">濃郁可可與酥脆口感完美結合。</p>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal1">更多介紹</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card card">
+              <img src="奶油曲奇.jpg" class="card-img-top product-img" alt="奶油曲奇">
+              <div class="card-body text-center">
+                <h5 class="card-title">奶油曲奇</h5>
+                <p class="card-text">經典奶香，入口即化。</p>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal2">更多介紹</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card card">
+              <img src="堅果燕麥餅乾.jpg" class="card-img-top product-img" alt="堅果燕麥餅乾">
+              <div class="card-body text-center">
+                <h5 class="card-title">堅果燕麥餅乾</h5>
+                <p class="card-text">健康滿點的堅果與燕麥結合。</p>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal3">更多介紹</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 小蛋糕 -->
+      <div class="tab-pane fade" id="cake" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="product-card card">
+              <img src="檸檬蛋糕.png" class="card-img-top product-img" alt="檸檬蛋糕">
+              <div class="card-body text-center">
+                <h5 class="card-title">檸檬小蛋糕</h5>
+                <p class="card-text">清爽酸甜，午後時光的完美搭配。</p>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal4">更多介紹</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card card">
+              <img src="抹茶布朗尼.png" class="card-img-top product-img" alt="抹茶布朗尼">
+              <div class="card-body text-center">
+                <h5 class="card-title">抹茶布朗尼</h5>
+                <p class="card-text">抹茶控必吃，濃郁又不膩。</p>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal5">更多介紹</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 季節限定 -->
+      <div class="tab-pane fade" id="seasonal" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="product-card card">
+              <img src="草莓酥餅.png" class="card-img-top product-img" alt="草莓酥餅">
+              <div class="card-body text-center">
+                <h5 class="card-title">草莓酥餅（春季）</h5>
+                <p class="card-text">使用當季新鮮草莓，香甜酥鬆。</p>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal6">更多介紹</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 彈窗 -->
+  <div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">巧克力餅乾</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          使用比利時黑巧克力、海鹽點綴，讓甜與鹹完美融合，是午後茶點的絕配!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">奶油曲奇</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          精選進口奶油，手工擠花烘焙，酥鬆不膩，是人氣常備伴手禮!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">堅果燕麥餅乾</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          含有杏仁、核桃、燕麥與椰絲，低糖健康，是健身族群與孩子們的最愛！
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal4" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">檸檬蛋糕</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            金黃色小檸檬磅蛋糕，表面灑糖霜與細檸檬絲!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal5" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">抹茶布朗尼</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            表面灑有些許抹茶粉，有白巧克力點綴!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal6" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">草莓酥餅</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            酥餅表面嵌入新鮮草莓切片，表皮呈金黃酥脆狀!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>關於我們</h3>
+        <p>我們專注於手工餅乾，提供最天然<br>、最美味的甜點體驗。</p>
+      </div>
+      <div class="footer-links">
+        <h3>快速連結</h3>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="products.html">產品介紹</a></li>
+            <li><a href="order.html">訂購方式</a></li>
+            <li><a href="form.html">我要下單</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>聯絡我們</h3>
+        <p>📞 02-1234-5678</p>
+        <p>📧 sweet_cookie@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 甜心餅語 | 保留所有權利</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menuToggle');
+      const navbarMenu = document.getElementById('navbarMenu');
+    
+      if (!menuToggle || !navbarMenu) return;
+    
+      menuToggle.addEventListener('click', () => {
+        navbarMenu.classList.toggle('active');
+      });
+    
+      navbarMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navbarMenu.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
